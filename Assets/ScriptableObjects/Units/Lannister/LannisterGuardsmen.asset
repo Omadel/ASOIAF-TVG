@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c85ffb9bc3e384a81c236b7c6035f5, type: 3}
+  m_Name: LannisterGuardsmen
+  m_EditorClassIdentifier: 
+  name: Lannister Guardsmen
+  pointValue: 5
+  house: {fileID: 11400000, guid: 3110a97df366d6f4eb9827cdde484887, type: 2}
+  character: {fileID: 21300000, guid: ac483073baf6c7f4ea79669fce24902c, type: 3}
+  speed: 4
+  defense: 3
+  moral: 7
+  type: {fileID: 11400000, guid: 1ca18f09e64eea043b9148e5197ee6b2, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: a8d565f02d456634cb28c335f3c1eb51, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 6b86e156c319e464291ec4f1b0076252, type: 2}
+  lore: The world over knows the extent of Lannister wealth, and its influence extends
+    to even their most basic foot soldiers. The rank-and-file Lannitter forces enjoy
+    a battlefield superiority borne of strong armor, heavy metal shields, and the
+    sense of invulnerability that goes with it. Most enemies of House Lannister prove
+    incapable of even marking a dent in such stalwart lines.
+  hasRequierement: 0
+  requierementName: 
+  requierementText: 

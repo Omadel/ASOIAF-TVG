@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c85ffb9bc3e384a81c236b7c6035f5, type: 3}
+  m_Name: StarkCrannogmanTrackers
+  m_EditorClassIdentifier: 
+  name: Crannogman Trackers
+  pointValue: 5
+  house: {fileID: 11400000, guid: f52f97a267cfb9f418f28d816d0d3fa3, type: 2}
+  character: {fileID: 21300000, guid: 94923edaa8e5e60418725d273a6ca870, type: 3}
+  speed: 6
+  defense: 6
+  moral: 7
+  type: {fileID: 11400000, guid: 1ca18f09e64eea043b9148e5197ee6b2, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 1f9448d4d1ed56649909cd3e1b6ad699, type: 2}
+  - {fileID: 11400000, guid: 8897e6bdfa132fe4db309754a1db6446, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 1f5a2d5b60848274986ffa0538985448, type: 2}
+  - {fileID: 11400000, guid: 2adad4ca73adf8849b4b9e45c5a31542, type: 2}
+  lore: The Crannogman Trackers are never what one would call a front-line unit.
+    Lightly armed and lightly armored, Trackers stand little chance in formal engagements,
+    What Trackers lack in direct damage, however, they more than make up for in their
+    speed and ability to disrupt and confuse ennemy formations, all the while combining
+    their speed and mobility with deadly hit-and-run tactics to avoid direct engagements.

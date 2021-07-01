@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c85ffb9bc3e384a81c236b7c6035f5, type: 3}
+  m_Name: StarkSwornSword
+  m_EditorClassIdentifier: 
+  name: Stark Sworn Sword
+  pointValue: 5
+  house: {fileID: 11400000, guid: f52f97a267cfb9f418f28d816d0d3fa3, type: 2}
+  character: {fileID: 21300000, guid: 2f884f96fcb79ac4d8930f93a9b0a142, type: 3}
+  speed: 5
+  defense: 4
+  moral: 6
+  type: {fileID: 11400000, guid: 1ca18f09e64eea043b9148e5197ee6b2, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 8065b870231ad854fa292289851fe3fc, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 52515f9ef20f32a4ea3c421b39787e98, type: 2}
+  lore: 'Sworn Swords are the bedrock upon which House Stark commanders base their
+    strategies. Brave, capable and overwhelmingly loyal to the Direwolf banner, Sworn
+    Sword would rather perish to a man than abandon brothers in battle. While perhaps
+    not as well found in arms and armor as wealthier houses, these men know that
+    gold alone does not a warrior make. '
+  hasRequierement: 0
+  requierementName: 
+  requierementText: 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dee1b0c56986446974b641a2f44b75, type: 3}
+  m_Name: LannisterFealtyToTheCrown
+  m_EditorClassIdentifier: 
+  house: {fileID: 11400000, guid: 3110a97df366d6f4eb9827cdde484887, type: 2}
+  CardName: Fealty to the crown
+  ActivationText: 'When an enemy fails a Panic Test:'
+  RuleText: "Target 1 friendly unit in Long Range. \r\nFor each Wound that enemy
+    suffered \r\nfrom this test, restore 1 Wound \r\nto that triendly unit, up to
+    3.\r\n\r\nIf you Control     , restore +1 \r\nWound (to a maximum of 4)."

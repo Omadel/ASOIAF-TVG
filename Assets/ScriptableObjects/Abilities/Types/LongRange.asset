@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30760e9238dfd3a49843213cb9907a1c, type: 3}
+  m_Name: LongRange
+  m_EditorClassIdentifier: 
+  gold: {fileID: 21300000, guid: 622fa0bf83de8fe4cb649739f140bf58, type: 3}
+  silver: {fileID: 21300000, guid: a09be58b9dc3e0b4fa454cf3593368dd, type: 3}
+  goldOutline: {fileID: 21300000, guid: f1140212a9a5d224d921b7b179f013b9, type: 3}
+  silverOutline: {fileID: 21300000, guid: 1e21576fdd81463458fcd080b1aa29b0, type: 3}

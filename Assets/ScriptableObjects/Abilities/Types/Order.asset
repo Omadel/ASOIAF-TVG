@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30760e9238dfd3a49843213cb9907a1c, type: 3}
+  m_Name: Order
+  m_EditorClassIdentifier: 
+  gold: {fileID: 21300000, guid: f23c0a6dbfa2d5c43afbac2ad669ff51, type: 3}
+  silver: {fileID: 21300000, guid: 0c52afc4ea2503940ba6364235d9b6cb, type: 3}
+  goldOutline: {fileID: 21300000, guid: df2c8c8e61355894e850caae0ce9e796, type: 3}
+  silverOutline: {fileID: 21300000, guid: bbbb4d30a5b01c447a99eaab33cad5f2, type: 3}

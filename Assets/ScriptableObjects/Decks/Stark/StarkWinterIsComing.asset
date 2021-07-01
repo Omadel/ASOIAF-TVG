@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dee1b0c56986446974b641a2f44b75, type: 3}
+  m_Name: StarkWinterIsComing
+  m_EditorClassIdentifier: 
+  house: {fileID: 11400000, guid: f52f97a267cfb9f418f28d816d0d3fa3, type: 2}
+  CardName: Winter is Coming
+  ActivationText: "When a friendly unit is performing \r\na Charge Action, before
+    rolling Charge Distance Dice:"
+  RuleText: "Ennemies Successfully Charged by this \r\nunit cannot be the target
+    of friendly \r\nOrders or Tactics cards this Turn.\r\n\r\nIf you Control    
+    , this unit may \r\nre-roll any Charge Distance Dice."

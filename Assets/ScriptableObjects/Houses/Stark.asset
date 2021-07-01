@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ff2c729d5f3774693707db5d4af052, type: 3}
+  m_Name: Stark
+  m_EditorClassIdentifier: 
+  deckFront: {fileID: 21300000, guid: 1b1eeba2ebc7b5d48a3f9adf2db8c324, type: 3}
+  attachementFront: {fileID: 21300000, guid: daea893fbb5792f4983777b81b29343f, type: 3}
+  unitFront: {fileID: 21300000, guid: 70a9ba99edff57b48b4df63cef19a9a2, type: 3}
+  unitBack: {fileID: 21300000, guid: c1c13a53d62c60443b2a49fc0e748bb7, type: 3}
+  abilityMask: {fileID: 21300000, guid: 22b4e80c7beb68544bc7bc4f2f1f5829, type: 3}
+  separatorSprite: {fileID: 21300000, guid: be7d4e1f1f3bd524db1b0e1a8a48ce9c, type: 3}
+  requierementNameImage: {fileID: 21300000, guid: c368ab531c8c7a744996bd9d96ced536, type: 3}
+  requierementImage: {fileID: 21300000, guid: 06f177fd93c9b98479df33953bee3698, type: 3}
+  color: {r: 0.3254902, g: 0.5529412, b: 0.6666667, a: 1}
+  material: 0

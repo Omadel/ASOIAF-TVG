@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5028ced99b19134586379beb89ee202, type: 3}
+  m_Name: OrderSetForCharge
+  m_EditorClassIdentifier: 
+  name: 'Order: Set For Charge'
+  rule: '<b>When this unit is Successfully Charged from the Front or Flank:</b>
+
+    If
+    this unit is not engaged with another enemy, it performs 1 Melee Attack Action
+    on the Attacker before they perform their Melee Attack.'
+  type: {fileID: 11400000, guid: 5e2ffdc8020c800468b1041b3c311631, type: 2}

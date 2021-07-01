@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c85ffb9bc3e384a81c236b7c6035f5, type: 3}
+  m_Name: LannisterHalberdiers
+  m_EditorClassIdentifier: 
+  name: Lannister Halberdiers
+  pointValue: 6
+  house: {fileID: 11400000, guid: 3110a97df366d6f4eb9827cdde484887, type: 2}
+  character: {fileID: 21300000, guid: 1c957779e17322745be1e7d1f6b5c3ed, type: 3}
+  speed: 5
+  defense: 4
+  moral: 6
+  type: {fileID: 11400000, guid: 1ca18f09e64eea043b9148e5197ee6b2, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 92a893b7aa91f424db173bdcef325041, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 4226efc1800843342a64e3e6ff9ff0bc, type: 2}
+  - {fileID: 11400000, guid: 23b9a8f5a9eaf1543a33dda8d209e003, type: 2}
+  lore: While capable of mounting offensive assault, House Lannister's Halberdiers
+    excel in defensive formations and positions. Charging enemies should think twice
+    before facing an entrenched Halberdier line. Care should be take to shield Halberdiers
+    from flanking manouvers or ranged fire, but, when properly emplyoed, nothing
+    gets past a Halberdier's deadly blade.
+  hasRequierement: 0
+  requierementName: 
+  requierementText: 
