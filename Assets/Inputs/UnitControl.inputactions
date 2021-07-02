@@ -14,7 +14,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "FastCamera",
+                    "name": "Fast",
                     "type": "Button",
                     "id": "1b4a11a4-f765-4fea-9ca9-fc582f00a63b",
                     "expectedControlType": "Button",
@@ -26,6 +26,14 @@
                     "type": "Value",
                     "id": "009c300e-555b-403f-8a5d-047210a531b4",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "1b4ccc50-ff2a-4ed9-b365-28f3f16afcae",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 }
@@ -93,7 +101,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "FastCamera",
+                    "action": "Fast",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -151,6 +159,72 @@
                     "action": "RotationAxes",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "Q&E",
+                    "id": "d1f1a172-6c8e-4bfc-87a2-ce6ed28c0fd4",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "73b01087-1bb5-44fc-a69a-5e79af73b776",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "3d6fddee-6d90-477e-87b0-827dc5c23ec7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "5c34b213-6a87-4ffb-8613-0a21149f28ef",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "fba50ad0-96a2-421d-ac9b-6cb851cebf01",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2419129d-157e-4538-9e94-8d7fce223c84",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

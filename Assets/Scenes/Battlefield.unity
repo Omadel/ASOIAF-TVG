@@ -259,6 +259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrayBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5437347667751923638, guid: db14014c833ec054d84d38cd99ad985e, type: 3}
+      propertyPath: CameraRig
+      value: 
+      objectReference: {fileID: 1850179015}
     - target: {fileID: 9135306091954759166, guid: db14014c833ec054d84d38cd99ad985e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -470,16 +474,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31bf6dc17081ab740bf54f5793f6add2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 1737249707}
   normalSpeed: 30
   fastSpeed: 50
   movementSpeed: 30
   movementTime: 5
-  rotationAmount: 0
+  rotationAmount: 60
+  XAngleMax: 40
+  XAngleMin: -40
+  XAngle: 0
+  YAngle: 0
+  zoomAmount: {x: 0, y: 1, z: -1}
   newPosition: {x: 0, y: 0, z: 0}
   newRotation: {x: 0, y: 0, z: 0, w: 0}
+  newZoom: {x: 0, y: 0, z: 0}
   panAxes: {fileID: -8011904785460233266, guid: 29537ae50abe01b41bcfb4729454a14d, type: 3}
   rotationAxes: {fileID: 303782086138569418, guid: 29537ae50abe01b41bcfb4729454a14d, type: 3}
   fastCamera: {fileID: -476581087131138802, guid: 29537ae50abe01b41bcfb4729454a14d, type: 3}
+  zoomAxis: {fileID: 8070910646842144451, guid: 29537ae50abe01b41bcfb4729454a14d, type: 3}
 --- !u!4 &1850179015
 Transform:
   m_ObjectHideFlags: 0
@@ -487,14 +499,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850179013}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.98539644, z: -0, w: -0.17027591}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1737249707}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 199.608, z: 0}
 --- !u!1001 &1958215186
 PrefabInstance:
   m_ObjectHideFlags: 0

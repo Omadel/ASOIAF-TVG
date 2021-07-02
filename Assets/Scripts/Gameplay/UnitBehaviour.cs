@@ -6,7 +6,6 @@ namespace ASOIAF {
         public static GameObject AgentHolder { get; private set; }
         [SerializeField] private NavMeshAgent agent;
         [SerializeField] private Animator animator;
-        [SerializeField] private float minWaitingTime = 10f, maxWaitingTime = 40f;
 
         private void Start() {
             AgentHolder ??= new GameObject("AgentHolder");
