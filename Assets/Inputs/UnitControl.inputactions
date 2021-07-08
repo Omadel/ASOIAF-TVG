@@ -36,6 +36,30 @@
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "MouseDelta",
+                    "type": "Value",
+                    "id": "9678c970-bb68-4c7e-aee1-a37284fbe235",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MousePanActivation",
+                    "type": "Button",
+                    "id": "97f9a1ca-1082-4e21-8747-9adc7f2670f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MouseRotateActivation",
+                    "type": "Button",
+                    "id": "610b4e67-6375-4c4e-8975-89ca4cce52ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -96,8 +120,30 @@
                 },
                 {
                     "name": "",
+                    "id": "1794283f-006a-48e3-84f4-2943216f862b",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "PanAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "cbccf1e9-960f-4dad-b450-1f0715287dc8",
                     "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c83f4ab-2d2c-4a0f-a9d8-0356f95b31e3",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -217,12 +263,67 @@
                 },
                 {
                     "name": "",
+                    "id": "ccdd0c82-660d-4021-89a8-5f699c682748",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "InvertVector2(invertX=false),StickDeadzone",
+                    "groups": "",
+                    "action": "RotationAxes",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2419129d-157e-4538-9e94-8d7fce223c84",
                     "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Invert,Scale(factor=0.008333334)",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "facbae18-d67e-4d6e-b72e-6d030b27d369",
+                    "path": "<Gamepad>/dpad/y",
                     "interactions": "",
                     "processors": "Invert",
                     "groups": "",
                     "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d4dfdca7-a1a2-43f1-b5ef-381992039fae",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "InvertVector2,ScaleVector2(x=0.5,y=0.5)",
+                    "groups": "",
+                    "action": "MouseDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4bb44886-c1b5-419e-85d1-1007d39bb58c",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePanActivation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59c87a59-74a8-46b6-baf7-50096efd99f8",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseRotateActivation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

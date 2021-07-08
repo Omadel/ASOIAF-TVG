@@ -8,12 +8,17 @@ namespace ASOIAF {
         [SerializeField] private UnitBehaviour[] units;
         [SerializeField] private int wounds = 12;
 
+        private void OnMouseDown() {
+            print("Clicked");
+        }
+
         private void Start() {
             wounds = units.Length;
         }
 
         private void Update() {
             if(isControlled) {
+                transform.position = CameraRig.transform.position;
                 Vector3 forward = CameraRig.forward;
                 forward.y = transform.position.y;
                 transform.forward = forward;
