@@ -13,7 +13,7 @@ namespace ASOIAF {
             float radius = 1f;
             Vector3 camPosition = Target.CameraTransform.position;
             Gizmos.DrawSphere(Target.transform.position, radius, color);
-            Gizmos.DrawLine(Target.transform.position, camPosition, color);
+            Handles.DrawDottedLine(Target.transform.position, camPosition, 10f);
 
             Vector3 groundedPosition = camPosition;
             groundedPosition.y = Target.transform.position.y;

@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: Infantry
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 20afcfc27e1e4d4459154fb896663c94, type: 3}
+  angle: 97.52042
+  arrowOffset: 2.4
+  center: 0
+  size: {x: 2.755, y: 0, z: 2.4}

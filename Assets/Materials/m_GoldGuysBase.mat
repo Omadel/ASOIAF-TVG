@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_GoldGuysBase
+  m_Name: M_GoldGuysBase
   m_Shader: {fileID: 4800000, guid: d401efb16795f8d4cba5d826e64f3b34, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

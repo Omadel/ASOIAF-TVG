@@ -6,28 +6,36 @@ namespace ASOIAF {
         public float CameraRotationAmplitude => cameraRotationAmplitude;
         public Transform CameraTransform => cameraTransform;
 
+        [SerializeField] private InputActionAsset inputActionMapAsset;
+        [SerializeField] private string inputActionMapName = "Camera";
+
         [SerializeField] private Transform cameraTransform;
         [SerializeField] private float normalSpeed = 30f, fastSpeed = 50f;
-        [SerializeField] private float movementSpeed, movementTime;
+        [SerializeField] private float movementTime;
         [SerializeField] private float rotationAmount;
         [SerializeField, Range(0f, 90f)] private float cameraRotationAmplitude;
-        [SerializeField] private float XAngle, YAngle;
-        [SerializeField] private Vector3 zoomAmount;
 
-        [SerializeField] private Vector3 newPosition;
-        [SerializeField] private Quaternion newRotation;
-        [SerializeField] private Vector3 newZoom;
-
-        [SerializeField] private InputActionReference panAxes, rotationAxes, fastCamera, zoomAxis, mouseDelta, mousePanActivation, mouseRotationActivation;
-        [SerializeField] private bool canPanWithMouse, canRotateWithMouse;
         private void Awake() {
-            fastCamera.action.performed += _ => movementSpeed = fastSpeed;
-            fastCamera.action.canceled += _ => movementSpeed = normalSpeed;
+            inputActionMap = inputActionMapAsset.FindActionMap(inputActionMapName);
 
-            mousePanActivation.action.performed += _ => canPanWithMouse = true;
-            mousePanActivation.action.canceled += _ => canPanWithMouse = false;
-            mouseRotationActivation.action.performed += _ => canRotateWithMouse = true;
-            mouseRotationActivation.action.canceled += _ => canRotateWithMouse = false;
+            InputAction fastAction = inputActionMap.FindAction("Fast");
+            fastAction.performed += _ => SetSpeed(fastSpeed);
+            fastAction.canceled += _ => SetSpeed(normalSpeed);
+            InputAction mousePanActivationAction = inputActionMap.FindAction("MousePanActivation");
+            mousePanActivationAction.performed += _ => canPanWithMouse = true;
+            mousePanActivationAction.canceled += _ => canPanWithMouse = false;
+            InputAction mouseRotationActivationAction = inputActionMap.FindAction("MouseRotateActivation");
+            mouseRotationActivationAction.performed += _ => canRotateWithMouse = true;
+            mouseRotationActivationAction.canceled += _ => canRotateWithMouse = false;
+
+            panAxes = inputActionMap.FindAction("PanAxes");
+            rotationAxes = inputActionMap.FindAction("RotationAxes");
+            zoomAxis = inputActionMap.FindAction("Zoom");
+            mouseDelta = inputActionMap.FindAction("MouseDelta");
+        }
+
+        private void SetSpeed(float speed) {
+            movementSpeed = speed;
         }
 
         private void Start() {
@@ -47,31 +55,47 @@ namespace ASOIAF {
         }
 
         private void OnEnable() {
-            panAxes.action.Enable();
-            rotationAxes.action.Enable();
-            fastCamera.action.Enable();
-            zoomAxis.action.Enable();
-            mouseDelta.action.Enable();
-            mousePanActivation.action.Enable();
-            mouseRotationActivation.action.Enable();
+            foreach(InputAction action in inputActionMap.actions) {
+                action.Enable();
+            }
+            //panAxes.action.Enable();
+            //rotationAxes.action.Enable();
+            //fastCamera.action.Enable();
+            //zoomAxis.action.Enable();
+            //mouseDelta.action.Enable();
+            //mousePanActivation.action.Enable();
+            //mouseRotationActivation.action.Enable();
+        }
+
+        private void OnDisable() {
+            foreach(InputAction action in inputActionMap.actions) {
+                action.Disable();
+            }
+            //panAxes.action.Disable();
+            //rotationAxes.action.Disable();
+            //fastCamera.action.Disable();
+            //zoomAxis.action.Disable();
+            //mouseDelta.action.Disable();
+            //mousePanActivation.action.Disable();
+            //mouseRotationActivation.action.Disable();
         }
 
         private void PanCamera() {
-            Vector2 panAxes = this.panAxes.action.ReadValue<Vector2>();
+            Vector2 panAxes = this.panAxes.ReadValue<Vector2>();
             if(canPanWithMouse) {
-                panAxes = mouseDelta.action.ReadValue<Vector2>();
+                panAxes = mouseDelta.ReadValue<Vector2>();
             }
 
-            newPosition += transform.forward * panAxes.y * movementSpeed * Time.deltaTime;
-            newPosition += transform.right * panAxes.x * movementSpeed * Time.deltaTime;
+            newPosition += movementSpeed * panAxes.y * Time.deltaTime * transform.forward;
+            newPosition += movementSpeed * panAxes.x * Time.deltaTime * transform.right;
             newPosition.y = 0;
             transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
         }
 
         private void RotateCamera() {
-            Vector2 rotationAxes = this.rotationAxes.action.ReadValue<Vector2>();
+            Vector2 rotationAxes = this.rotationAxes.ReadValue<Vector2>();
             if(canRotateWithMouse) {
-                rotationAxes = mouseDelta.action.ReadValue<Vector2>();
+                rotationAxes = mouseDelta.ReadValue<Vector2>();
                 rotationAxes.x = -rotationAxes.x;
             }
 
@@ -84,11 +108,21 @@ namespace ASOIAF {
         }
 
         private void ZoomCamera() {
-            float zoomAxis = this.zoomAxis.action.ReadValue<float>();
+            float zoomAxis = this.zoomAxis.ReadValue<float>();
 
             newZoom += zoomAmount * zoomAxis;
 
             cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
         }
+
+        private InputActionMap inputActionMap;
+        private InputAction panAxes, rotationAxes, zoomAxis, mouseDelta;
+        private bool canPanWithMouse, canRotateWithMouse;
+        private float movementSpeed;
+        private float XAngle, YAngle;
+        private Quaternion newRotation;
+        private Vector3 newPosition;
+        private Vector3 zoomAmount;
+        private Vector3 newZoom;
     }
 }

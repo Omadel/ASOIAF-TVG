@@ -29,7 +29,9 @@ namespace ASOIAF {
                 float right = localDirection.normalized.x;
                 bool isMoving = direction.magnitude >= agent.stoppingDistance;
                 agent.isStopped = !isMoving;
-                // Debug.Log($"World Direction :{direction} Local Directrion :{localDirection}");
+                if(isMoving) {
+                    animator.SetBool("IsBlocking", false);
+                }
                 animator.SetBool("IsMoving", isMoving);
                 animator.SetFloat("Speed", agent.velocity.magnitude / agent.speed);
                 animator.SetFloat("Forward", forward);
@@ -63,7 +65,9 @@ namespace ASOIAF {
         public void Die() {
             isDead = true;
             animator.SetTrigger("Die");
-            int variant = new System.Random().NextDouble() >= 0.5 ? 1 : 0;
+            double rand = new System.Random().Next(2);
+            print(rand);
+            int variant = rand == 1 ? 1 : 0;
             animator.SetFloat("DeathVariant", variant);
             agent.isStopped = isDead;
             agent.enabled = false;

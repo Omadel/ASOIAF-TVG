@@ -7,9 +7,22 @@ namespace ASOIAF {
         [SerializeField] private GameObject agentPrefab;
         [SerializeField] private UnitBehaviour[] units;
         [SerializeField] private int wounds = 12;
+        [SerializeField] private UnityEngine.Material material;
+        [SerializeField] private Color c;
 
         private void OnMouseDown() {
             print("Clicked");
+        }
+
+        private void Awake() {
+            UnityEngine.Material mat = new UnityEngine.Material(material) {
+                color = c
+            };
+            Renderer[] renderers = GetComponentsInChildren<Renderer>();
+            Debug.Log(renderers.Length, renderers[renderers.Length - 1]);
+            foreach(Renderer renderer in renderers) {
+                renderer.material = mat;
+            }
         }
 
         private void Start() {

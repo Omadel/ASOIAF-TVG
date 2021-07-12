@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: WarMachine
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7406c70d863553d43a9a78ef117bd1f3, type: 3}
+  angle: 86.81772
+  arrowOffset: 1.5
+  center: 1.32
+  size: {x: 1.4, y: 0, z: 1.48}
