@@ -5,10 +5,6 @@ using UnityEngine;
 public class FieldOfView : MonoBehaviour {
     public ASOIAF.UnitTypeData unitType;
     public float viewRadius;
-    //[Range(0, 360)]
-    //public float viewAngle;
-    //public float unitType.ArrowOffset;
-    //public float unitType.Center;
 
     public LayerMask targetMask;
     public LayerMask obstacleMask;
@@ -16,7 +12,7 @@ public class FieldOfView : MonoBehaviour {
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
 
-    public float meshResolution;
+    [Min(0)] public float meshResolution;
     public int edgeResolveIterations;
     public float edgeDstThreshold;
 
